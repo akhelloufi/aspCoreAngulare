@@ -14,9 +14,9 @@ namespace WebApi.Models
         {
 
         }
-        public DbSet<Administrateur> Administrateur { get; set; }
-        public DbSet<Hopital> Hopitals { get; set; }
-        public DbSet<Appareil> Appareils { get; set; }
+        public DbSet<Admin> Admins { get; set; }
+        public DbSet<Hospital> Hopitals { get; set; }
+        public DbSet<Machine> Appareils { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Trip> Trips { get; set; }
         public DbSet<Segment> Segments { get; set; }

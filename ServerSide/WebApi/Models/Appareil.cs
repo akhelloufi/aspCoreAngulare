@@ -6,26 +6,27 @@ using System.Threading.Tasks;
 
 namespace WebApi.Models
 {
-    public class Appareil
+    public class Machine
     {
             [Key]
             public int ID { get; set; }
 
             //[index("codeapp", IsUnique = true)]
-            public string CodeAppareil { get; set; }
-            public string NomAppareil { get; set; }
+            public string Code { get; set; }
+            public string Nom { get; set; }
             //
 
-            public DateTime DateAchat { get; set; }
+            public DateTime DatePurchase { get; set; }
             public DateTime DateFabrication { get; set; }
-            public DateTime DerniereDateUtilisation { get; set; }
-            public String NatureMaladieTraitent { get; set; }
-            public double prixAchat { get; set; }
+            public DateTime LastDateUse { get; set; }
+            public String NatureDiseaseTreat { get; set; }
+            public double prixPurchase { get; set; }
             //-Fréquence d utilisation : quotidienne ,semaine , mensuel.
-            public String FrequenceUtilisation { get; set; }
-            public string ConditionUtilisation { get; set; }
+            public String FrequencyUsage{ get; set; }
+            public string ConditionUse { get; set; }
+            public Boolean Available { get; set; }
 
-            public int HopitalID { get; set; }
+            public int HospitalID { get; set; }
 
     }
 }

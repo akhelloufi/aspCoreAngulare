@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WebApi.Models
 {
-    public class Hopital
+    public class Hospital
     {
         //        -référence hôpital
         //-Nom Hôpital
@@ -20,8 +20,8 @@ namespace WebApi.Models
         [Key]
         public int ID { get; set; }
         
-        public string RefHopital { get; set; }
-        public string NomHopital { get; set; }
+        public string Ref { get; set; }
+        public string Nom { get; set; }
         public string PositionGeographique { get; set; }
         public string Ville { get; set; }
         public string Region { get; set; }
@@ -30,8 +30,8 @@ namespace WebApi.Models
         public int AdminID { get; set; }
         
 
-        [ForeignKey("HopitalID")]
-        public ICollection<Appareil> Appareils { get; set; }
+        [ForeignKey("HospitalID")]
+        public ICollection<Machine> Machines { get; set; }
 
     }
 }

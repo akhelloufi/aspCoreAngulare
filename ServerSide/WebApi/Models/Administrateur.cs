@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WebApi.Models
 {
-    public class Administrateur
+    public class Admin
     {
         //        Donne d administrateur :
         //-Numéro de carte Nationale
@@ -31,6 +31,6 @@ namespace WebApi.Models
         public string Password { get; set; }
          
         [ForeignKey("AdminID")]
-        public ICollection<Hopital> Hopitals { get; set; }
+        public ICollection<Hospital> Hopitals { get; set; }
     }
 }
