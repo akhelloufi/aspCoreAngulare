@@ -54,6 +54,10 @@ import { ClientEditComponent } from './client-edit/client-edit.component';
 import { ClientDataService } from './DataService/ClientDataService'; 
 import { ClientCategoryDataService } from './DataService/ClientCategoryDataService';
 import { CommandeDataService } from './DataService/CommandeDataService';
+import { AdminCComponent } from './admin-c/admin-c.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -91,18 +95,17 @@ import { CommandeDataService } from './DataService/CommandeDataService';
     TripComponent,
     DeliveryComponent, 
     DeliveryEditComponent, 
-    ClientEditComponent, 
+    ClientEditComponent, AdminCComponent, NavbarComponent, RegistrationComponent, 
   ],
   imports: [
     BrowserModule, 
     AgGridModule.withComponents([]),
-    AppRoutingModule, 
-
+    AppRoutingModule,
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    ChartsModule, 
-    
+    ChartsModule,
+    NgbModule
   ],
   providers: [
     EmployeeDataService,

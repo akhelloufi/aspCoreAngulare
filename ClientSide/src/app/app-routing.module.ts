@@ -21,9 +21,12 @@ import { TripComponent } from './trip/trip.component';
 import { ProductComponent } from './stock/product/product.component';
 import { ClientComponent } from './client/client.component';
 import { DeliveryComponent } from './delivery/delivery.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 const routes: Routes = [
-
+  {path:'', component:HomeComponent}
+  ,{path: 'registration', component: RegistrationComponent}
+/*
   {path:'',component:EmployeesComponent},
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent},
@@ -41,7 +44,7 @@ const routes: Routes = [
   {path:'upload',component:UploadfilesComponent},
   {path:'statut',component:StatutComponent},
   {path:'trip',component:TripComponent},
-  {path:'delivery',component:DeliveryComponent},
+  {path:'delivery',component:DeliveryComponent},*/
     // {
     // path: 'stock', component: ProductComponent,
     //   children: [{
@@ -52,6 +55,7 @@ const routes: Routes = [
     //     component: ProductComponent
     //   }]
     //   },
+    ,
     { path: 'stock', loadChildren: './stock/stock.module#StockModule' }
   // {path:'Edit',component:EmployeeupdateComponent},
   // {path:'Add',component:EmployeeAddComponent},

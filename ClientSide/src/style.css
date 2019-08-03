@@ -5,11 +5,11 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 
-body {
+body {padding-top: 80px;
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
 }
-
+ .template {padding: 3rem 1.5rem;text-align: center;}
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;

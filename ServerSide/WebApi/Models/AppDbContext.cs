@@ -17,26 +17,7 @@ namespace WebApi.Models
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Hospital> Hopitals { get; set; }
         public DbSet<Machine> Appareils { get; set; }
-        public DbSet<Employee> Employees { get; set; }
-        public DbSet<Trip> Trips { get; set; }
-        public DbSet<Segment> Segments { get; set; }
-        public DbSet<Vat> Vats { get; set; }
-        public DbSet<InvoiceHeader> InvoiceHeaders { get; set; }
-        public DbSet<InvoiceDetail> InvoiceDetails { get; set; }
-        public DbSet<User> Users { get; set; }
-        public DbSet<Setting> Settings { get; set; } 
-        public DbSet<Bank> Banks { get; set; }
-         public DbSet<BankAccount> BankAccounts { get; set; }
-        public DbSet<Lessor> Lessors { get; set; }
-        public DbSet<Client> Clients { get; set; }
-        public DbSet<Contract> Contracts { get; set; }
-        public DbSet<Payment> Payments { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<ProductCategorie> ProductCategories { get; set; }
-        public DbSet<ClientCategory> ClientCategories { get; set; }
-        public DbSet<Statut> Statuts { get; set; }
-        public DbSet<StoreProduct> StoreProducts { get; set; }
-        public DbSet<Delivery> Deliveries { get; set; }    
+     
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -9,7 +9,8 @@ namespace WebApi.Hubs
 {
     public class ChartHub: Hub
     {
-        public async Task SendChartData(List<Chart> data) 
+       /* public async Task SendChartData(List<Chart> data) 
         => await Clients.All.SendAsync("receivechartdata", data);
+        */
     }
 }
